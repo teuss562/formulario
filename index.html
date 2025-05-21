@@ -2,29 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
     <form>
-        <img src="https://i.pinimg.com/1200x/06/d5/6a/06d56a9af52590977301058201372f87.jpg" alt="Capitão" width="300" height="100"
-       <label>Nome do cliente:</label>
-       <input type="text" name="nome">
-       <label>Hórarios disponíveis</label>
-          <select name=horários>
-              <option value="7a8">7:30 à 8:30</option>
-              <option value="8a9">8:30 à 9:30</option>
-              <option value="9a10">9:30 à 10:30</option>
-              <option value="10a11">10:30 à 11:30</option>
-          </select>
-                 <label>Especialidade</label>
-          <select name=especialidades>
-              <option value="olho">oftalmologista</option>
-              <option value="cerebro">psiquiatra</option>
-              <option value="medico">clinico geral</option>
-          </select>
+        <img src="https://i.pinimg.com/1200x/06/d5/6a/06d56a9af52590977301058201372f87.jpg" alt="Capitão" width="300" height="100">
+        <label for="nome">Nome do cliente:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        
+        <label for="horarios">Horários disponíveis:</label>
+        <select name="horarios" id="horarios">
+            <option value="7a8">7:30 à 8:30</option>
+            <option value="8a9">8:30 à 9:30</option>
+            <option value="9a10">9:30 à 10:30</option>
+            <option value="10a11">10:30 à 11:30</option>
+        </select>
+        
+        <label for="especialidades">Especialidade:</label>
+        <select name="especialidades" id="especialidades">
+            <option value="olho">Oftalmologista</option>
+            <option value="cerebro">Psiquiatra</option>
+            <option value="medico">Clínico Geral</option>
+        </select>
+        
         <button type="submit">Agendar</button>
-      <p>Davi Miguel e Mateus Neves-3Rdc2</p>
+        
+        <p>Davi Miguel e Mateus Neves-3Rdc2</p>
     </form>
 </body>
 </html>
